@@ -29,22 +29,22 @@ export default {
     return {
       process: [
         {
-          src: `/img/wp-1.png`,
+          src: `/svg/wp-1.svg`,
           title: `First theres an idea`,
           description: `Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...`,
         },
         {
-          src: `/img/wp-2.png`,
+          src: `/svg/wp-2.svg`,
           title: `Then we talk about`,
           description: `Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...`,
         },
         {
-          src: `/img/wp-3.png`,
+          src: `/svg/wp-3.svg`,
           title: `And we think about`,
           description: `Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...`,
         },
         {
-          src: `/img/wp-4.png`,
+          src: `/svg/wp-4.svg`,
           title: `So we draw again`,
           description: `Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...`,
         },
