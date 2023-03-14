@@ -44,7 +44,7 @@ export default {
           description: `Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...`,
         },
         {
-          src: `/svg/wp-4.svg`,
+          src: `/svg/wp-4-ok.svg`,
           title: `So we draw again`,
           description: `Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...`,
         },
