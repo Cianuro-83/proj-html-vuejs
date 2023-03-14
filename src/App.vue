@@ -4,6 +4,7 @@
   <WorkingProcess />
   <WorkWithUs />
   <Example />
+  <Footer />
 </template>
 
 <script>
@@ -12,6 +13,7 @@ import WorkWithUs from "./components/WorkWithUs.vue";
 import Header from "./components/Header.vue";
 import WorkingProcess from "./components/WorkingProcess.vue";
 import Example from "./components/Example.vue";
+import Footer from "./components/Footer.vue";
 export default {
   components: {
     CardBlock,
@@ -19,6 +21,7 @@ export default {
     Header,
     WorkingProcess,
     Example,
+    Footer,
     // **************************
     // FINE COMPONETS
   },

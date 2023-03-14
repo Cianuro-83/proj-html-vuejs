@@ -74,7 +74,6 @@ export default {
   margin: 0;
   padding: 0;
   width: 1300px;
-  margin: 0 auto;
   margin: 150px auto;
   position: relative;
 }
