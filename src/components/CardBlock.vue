@@ -11,6 +11,10 @@
       <img class="palloncino" src="/svg/svg-7.svg" alt="" />
       <img class="shop" src="/svg/svg-6.svg" alt="" />
     </div>
+    <div class="arrow-up1">
+      <a href="#">&UpArrow;</a>
+    </div>
+    <div class="arrow-up2"><a href="#">&UpArrow;</a></div>
   </div>
 </template>
 
@@ -82,5 +86,23 @@ export default {
   .shop {
     background-color: white;
   }
+}
+.arrow-up1,
+.arrow-up2 {
+  background-color: #c0e1cf;
+  cursor: pointer;
+  width: 45px;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 21px;
+}
+.arrow-up1 {
+  bottom: 21px;
+}
+.arrow-up2 {
+  bottom: 445px;
 }
 </style>
