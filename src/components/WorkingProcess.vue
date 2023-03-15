@@ -2,14 +2,24 @@
   <div class="main-content">
     <div class="container">
       <div class="onda">
-        <img src="/svg/svg-3.svg" alt="" />
+        <img
+          class="animate__animated animate__fadeIn animate__delay-1s"
+          src="/svg/svg-3.svg"
+          alt=""
+        />
       </div>
       <h2>Working <span>process</span></h2>
       <div class="working-steps">
         <div class="w-step" v-for="(card, i) in process" key="i">
-          <img :src="card.src" alt="" />
-          <h3>{{ card.title }}</h3>
-          <p>
+          <img
+            class="animate__animated animate__fadeIn"
+            :src="card.src"
+            alt=""
+          />
+          <h3 class="animate__animated animate__fadeIn animate__delay-1s">
+            {{ card.title }}
+          </h3>
+          <p class="animate__animated animate__fadeIn animate__delay-1s">
             {{ card.description }}
           </p>
         </div>
@@ -90,7 +100,7 @@ export default {
 }
 .onda {
   position: absolute;
-  top: 35%;
+  top: 40%;
   left: 10%;
   width: 80%;
 }
@@ -103,6 +113,8 @@ h2 {
   span {
     font-weight: 700;
     font-style: italic;
+    font-family: serif;
+    font-size: 60px;
   }
 }
 .working-steps {
@@ -110,7 +122,7 @@ h2 {
   gap: 31px;
   align-items: center;
   justify-content: flex-start;
-  margin: 0;
+  margin: 50px 0 0 0;
   padding: 0;
   position: relative;
   .w-step {
@@ -137,12 +149,12 @@ h2 {
     }
     h3 {
       font-weight: normal;
-      font-size: 17px;
+      font-size: 20px;
       margin: 25px 0;
     }
     p {
       font-weight: lighter;
-      font-size: 10px;
+      font-size: 14px;
     }
   }
 }

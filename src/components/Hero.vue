@@ -185,6 +185,7 @@ export default {
     font-style: italic;
     font-size: 70px;
     line-height: 1rem;
+    font-family: serif;
   }
   button {
     background-color: white;
@@ -194,6 +195,11 @@ export default {
     width: 120px;
     height: 36px;
     font-size: 12px;
+    &:hover {
+      background-color: $carousel-color;
+      color: white;
+      transition: all 1s ease-in-out;
+    }
   }
 }
 
