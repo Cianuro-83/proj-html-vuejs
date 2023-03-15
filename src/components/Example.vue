@@ -2,10 +2,12 @@
   <div class="main-content">
     <div class="container">
       <div class="poi">
-        <div v-for="(blog, i) in examples" :key="i">
+        <div class="blog" v-for="(blog, i) in examples" :key="i">
           <img :src="blog.src" alt="" />
-          <p>{{ blog.description }}</p>
-          <p class="author">{{ blog.author }}</p>
+          <div class="prova">
+            <p class="description">{{ blog.description }}</p>
+          </div>
+          <span class="author">{{ blog.author }}</span>
           <img class="babge" :src="blog.date" alt="" />
         </div>
       </div>
@@ -81,18 +83,55 @@ export default {
   display: flex;
   justify-content: space-between;
   gap: 35px;
+  // overflow: hidden;
   div {
     width: 410px;
     img {
       margin-bottom: 35px;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.1);
+        transition: all 1s ease-in-out;
+      }
     }
     p {
-      font-size: 21px;
+      font-size: 20px;
+      cursor: pointer;
+      &::after {
+        content: "";
+        display: block;
+        height: 3px;
+        width: 0;
+        background: transparent;
+        transition: width 1s ease, background-color 1s ease-in-out;
+      }
+      &:hover::after {
+        width: 100%;
+        background: $footer;
+      }
+      &::before {
+        content: "";
+        display: block;
+        height: 3px;
+        width: 0;
+        background: transparent;
+        transition: width 1s ease, background-color 1s ease-in-out;
+        position: absolute;
+        bottom: 70px;
+      }
+      &:hover::before {
+        width: 32%;
+        background: $footer;
+      }
+      .prova {
+        position: relative;
+      }
     }
     .author {
       font-style: italic;
       font-weight: lighter;
       font-size: 12px;
+      cursor: pointer;
     }
   }
 }
@@ -102,5 +141,10 @@ export default {
   z-index: 999;
   top: -25px;
   transform: translateX(16px);
+  filter: drop-shadow(0 0 0.1rem rgb(41, 40, 40));
+  cursor: pointer;
+}
+.blog {
+  overflow: hidden;
 }
 </style>
