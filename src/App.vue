@@ -1,5 +1,7 @@
 <template>
   <Header />
+  <LateralBar />
+  <Hero />
   <CardBlock />
   <WorkingProcess />
   <WorkWithUs />
@@ -14,6 +16,8 @@ import Header from "./components/Header.vue";
 import WorkingProcess from "./components/WorkingProcess.vue";
 import Example from "./components/Example.vue";
 import Footer from "./components/Footer.vue";
+import Hero from "./components/Hero.vue";
+import LateralBar from "./components/LateralBar.vue";
 export default {
   components: {
     CardBlock,
@@ -22,6 +26,8 @@ export default {
     WorkingProcess,
     Example,
     Footer,
+    Hero,
+    LateralBar,
     // **************************
     // FINE COMPONETS
   },

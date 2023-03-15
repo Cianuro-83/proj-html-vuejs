@@ -1,6 +1,6 @@
 <template>
   <div class="container-wwu">
-    <div class="contenuto-wws">
+    <div class="contenuto-wwu">
       <h2>Whant to work with us? Send us <span>a message!</span></h2>
       <p class="description-wwu">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas enim
@@ -58,6 +58,7 @@ export default {
   align-items: center;
   justify-content: center;
 }
+
 h2 {
   font-weight: lighter;
   font-size: 48px;

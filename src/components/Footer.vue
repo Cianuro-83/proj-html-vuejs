@@ -79,7 +79,7 @@ export default {
   margin: 65px auto 90px;
   display: flex;
   justify-content: space-between;
-  gap: 155px;
+  gap: 100px;
   font-weight: lighter;
   font-size: 14px;
   div {
