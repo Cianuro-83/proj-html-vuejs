@@ -7,10 +7,10 @@
       </div>
       <div>
         <p class="mail">maree.quoke@gmail.com</p>
-        <p class="address">+44645 321 789</p>
+        <p class="phone">+44645 321 789</p>
       </div>
       <div>
-        <p>Avenue d'Auderghem, 10</p>
+        <p class="street">Avenue d'Auderghem, 10</p>
         <p class="address">1040 Brusselles, Belgium</p>
       </div>
       <div class="social">
@@ -100,10 +100,32 @@ export default {
   margin-bottom: 20px;
   cursor: pointer;
 }
-.address {
+.address,
+.phone {
   margin-top: 25px;
-}
-.mail {
   cursor: pointer;
+}
+.mail,
+.street {
+  cursor: pointer;
+}
+
+.mail::after,
+.phone::after,
+.street::after,
+.address::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: width 1s ease, background-color 1s ease-in-out;
+}
+.mail:hover::after,
+.phone:hover::after,
+.street:hover::after,
+.address:hover::after {
+  width: 100%;
+  background: $footer-underline;
 }
 </style>
