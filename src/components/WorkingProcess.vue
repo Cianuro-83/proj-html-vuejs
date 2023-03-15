@@ -108,7 +108,7 @@ export default {
 h2 {
   text-align: center;
   font-size: 45px;
-  font-weight: lighter;
+  font-weight: normal;
   margin-top: 120px;
   span {
     font-weight: 700;

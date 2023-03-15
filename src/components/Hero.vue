@@ -176,8 +176,8 @@ export default {
   width: 764px;
   h3 {
     display: inline;
-    font-size: 48px;
-    font-weight: lighter;
+    font-size: 40px;
+    font-weight: normal;
     line-height: 4.5rem;
   }
   .evidence {

@@ -60,13 +60,14 @@ export default {
 }
 
 h2 {
-  font-weight: lighter;
+  font-weight: normal;
   font-size: 48px;
   text-align: center;
   span {
     font-weight: bolder;
-    font-size: 58px;
+    font-size: 65px;
     font-style: italic;
+    font-family: serif;
   }
 }
 .description-wwu {
@@ -81,6 +82,10 @@ button {
   background-color: #d8f0e3;
   cursor: pointer;
   text-transform: uppercase;
-  //   font-size: 33px;
+  &:hover {
+    background-color: $carousel-color;
+    color: white;
+    transition: all 1s ease-in-out;
+  }
 }
 </style>
