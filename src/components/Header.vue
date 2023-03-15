@@ -31,12 +31,8 @@ export default {
   data() {
     return {
       navItems: [`home`, `pages`, `portfolio`, `blog`, `shop`, `elements`],
-      homes: [`1`, `2`, `1`, `2`, `1`, `2`],
-      pages: [`3`, `3`, `3`, `3`, `3`, `3`],
-      pages: [`4`, `4`, `4`, `4`, `4`, `4`],
-      pages: [`5`, `5`, `5`, `5`, `5`, `5`],
-      pages: [`6`, `6`, `6`, `6`, `6`, `6`],
-      pages: [`7`, `7`, `7`, `7`, `7`, `7`],
+      homes: [`Link`, `Link`, `Link`, `Link`, `Link`, `Link`],
+
       // **************************
       // FINE DATA E RETURN &
     };
