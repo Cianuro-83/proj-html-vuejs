@@ -11,18 +11,26 @@
           <div class="carousel-box">
             <div class="carousel-text">
               <div>
-                <h3 v-html="carousel.title"></h3>
-                <span class="evidence">{{ carousel.evidence }}</span>
-                <p>
+                <div class="animate__animated animate__fadeInRight">
+                  <h3 v-html="carousel.title"></h3>
+                  <span class="evidence">{{ carousel.evidence }}</span>
+                </div>
+                <p class="animate__animated animate__fadeInRight">
                   {{ carousel.text }}
                 </p>
               </div>
-              <button>
+              <button
+                class="animate__animated animate__fadeInRight animate__delay-1s"
+              >
                 {{ carousel.button }}
               </button>
             </div>
             <div class="carousel-img">
-              <img :src="carousel.image" alt="" />
+              <img
+                class="animate__animated animate__fadeInUp"
+                :src="carousel.image"
+                alt=""
+              />
             </div>
           </div>
         </div>
@@ -101,9 +109,9 @@ export default {
       }
     },
   },
-  // mounted() {
-  //   this.autoplay = setInterval(this.nextSlide, 4000);
-  // },
+  mounted() {
+    this.autoplay = setInterval(this.nextSlide, 4000);
+  },
 };
 </script>
 

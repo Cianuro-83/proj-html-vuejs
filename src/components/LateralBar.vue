@@ -65,18 +65,20 @@ export default {
   background-color: #c0e1cf;
   cursor: pointer;
   width: 45px;
-  aspect-ratio: 1/1;
+  font-size: 30px;
+  font-weight: 900;
+  aspect-ratio: 1/0.1;
   display: flex;
   align-items: center;
   justify-content: center;
   position: fixed;
   right: 10px;
   bottom: 10%;
+  color: black;
 }
-.arrow-up1 {
-  bottom: 21px;
-}
-.arrow-up2 {
-  bottom: 445px;
+a {
+  font-style: none;
+  text-decoration: none;
+  color: white;
 }
 </style>
