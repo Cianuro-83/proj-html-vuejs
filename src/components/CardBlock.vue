@@ -1,12 +1,11 @@
 <template>
   <div class="block-container">
-    <img
-      class="card"
-      v-for="(block, i) in blocks"
-      :key="i"
-      :src="block"
-      alt=""
-    />
+    <div class="cianuro" v-for="(block, i) in blocks" :key="i">
+      <div class="prova">
+        <img class="illustration" :src="block.src" alt="" />
+        <p>{{ block.text }}</p>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -20,12 +19,30 @@ export default {
   data() {
     return {
       blocks: [
-        `/img/h-2-port-img-1.jpg`,
-        `/img/h-2-port-img-2.jpg`,
-        `/img/h-2-port-img-3.jpg`,
-        `/img/h-2-port-img-4.jpg`,
-        `/img/h-2-port-img-5.jpg`,
-        `/img/h-2-port-img-6.jpg`,
+        {
+          src: `/img/h-2-port-img-1.jpg`,
+          text: `prova`,
+        },
+        {
+          src: `/img/h-2-port-img-2.jpg`,
+          text: `prova`,
+        },
+        {
+          src: `/img/h-2-port-img-3.jpg`,
+          text: `prova`,
+        },
+        {
+          src: `/img/h-2-port-img-4.jpg`,
+          text: `prova`,
+        },
+        {
+          src: `/img/h-2-port-img-5.jpg`,
+          text: `prova`,
+        },
+        {
+          src: `/img/h-2-port-img-6.jpg`,
+          text: `prova`,
+        },
       ],
       // **************************
       // FINE DATA E RETURN &
@@ -55,10 +72,10 @@ export default {
 .block-container {
   display: flex;
   flex-wrap: wrap;
-  position: relative;
-  .card {
-    width: calc(100% / 3);
-    cursor: pointer;
-  }
+}
+.cianuro {
+  flex-basis: calc(100% / 3);
+}
+.prova {
 }
 </style>
