@@ -83,6 +83,7 @@ export default {
 .block-container {
   display: flex;
   flex-wrap: wrap;
+  flex-grow: 1;
   position: relative;
   z-index: 1;
 }
@@ -113,11 +114,23 @@ export default {
       padding-top: 10px;
     }
     &:hover {
+      // -webkit-animation: cianuro 1s infinite;
+      // -moz-animation: cianuro 1s infinite;
+      // -o-animation: cianuro 1s infinite;
+      // animation: cianuro 1s ease-in-out;
       filter: opacity(1);
       transition: all 1s ease-in-out;
     }
   }
 }
+// @keyframes cianuro:hover {
+//   0% {
+//     width: 0px;
+//   }
+//   100% {
+//     width: 300px;
+//   }
+// }
 .badge-text {
   font-size: 20px;
 }

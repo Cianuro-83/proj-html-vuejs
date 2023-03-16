@@ -16,6 +16,7 @@
           </div>
         </li>
       </ul>
+
       <img class="dots" src="/svg/svg-1.svg" alt="" />
     </div>
   </header>
@@ -80,34 +81,64 @@ header {
     text-transform: uppercase;
     font-weight: bold;
     margin-top: 15px;
+    position: relative;
   }
+}
+.menu-items li::after {
+  content: "";
+  z-index: 0;
+  position: absolute;
+  display: block;
+  height: 5px;
+  width: 0;
+  background: transparent;
+  transition: width 0.5s ease, background-color 0.5s ease-in-out;
+}
+.menu-items li:hover::after {
+  width: 10%;
+  background: #f2b2afb8;
 }
 a {
   color: black !important;
   text-decoration: none;
 }
 .dropdown ul {
-  background-color: bisque;
+  background-color: $box-work-process;
   list-style: none;
-  //   width: 300px;
   padding: 5px;
 }
 
 #submenu {
   opacity: 0;
   position: absolute;
-  top: 35px;
+  top: 0px;
   z-index: 1;
   visibility: hidden;
 }
 li:hover ul#submenu {
+  transition: all 0.5s ease-in-out;
   opacity: 1;
-  top: 25px;
+  top: 5px;
   right: 0;
   visibility: visible;
-  //   display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-grow: 1;
+}
+
+#submenu li::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: width 0.5s ease, background-color 0.5s ease-in-out;
+}
+
+#submenu li:hover::after {
+  width: 100%;
+  background: $footer-underline;
 }
 </style>

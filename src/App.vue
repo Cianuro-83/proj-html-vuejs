@@ -1,12 +1,12 @@
 <template>
   <Header />
-  <LateralBar />
   <Hero />
   <CardBlock />
   <WorkingProcess />
   <WorkWithUs />
   <Example />
   <Footer />
+  <LateralBar />
 </template>
 
 <script>
